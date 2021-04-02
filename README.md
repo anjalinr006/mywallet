@@ -8,12 +8,12 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 
 ## Setup
 
-1.git clone https://github.com/anjalinr006/mywallet.git
-2.virtualenv env
-3.source env/bin/activate
-4.pip install -r requirements.txt
-5.python manage.py makemigrations
-6.python manage.py runserver
+1. git clone https://github.com/anjalinr006/mywallet.git
+2. virtualenv env
+3. source env/bin/activate
+4. pip install -r requirements.txt
+5. python manage.py makemigrations
+6. python manage.py runserver
 
 ### Initialize my account for wallet
 
