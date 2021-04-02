@@ -14,7 +14,6 @@ def create_id():
     uuid_list = [uuid.uuid4().hex[:8].lower(), uuid.uuid4().hex[:4].lower(), uuid.uuid4().hex[:4].lower(),
                  uuid.uuid4().hex[:12].lower()]
     joined_string = "-".join(uuid_list)
-    print(joined_string)
     return joined_string
 
 

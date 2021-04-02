@@ -72,7 +72,7 @@ def enable_wallet_account(request):
         wallet.save()
         text = "enabled_at"
     elif request.method == 'PATCH':
-        disabling_data = request.data
+        disabling_data = dict(request.data)
         disabling_data.update({'status_last_updated': tz.localtime()})
         serializer = WalletSerializer(wallet, data=disabling_data,
                                       partial=True)
