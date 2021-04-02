@@ -9,15 +9,16 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 ## Setup
 
 1. git clone https://github.com/anjalinr006/mywallet.git
-2. virtualenv env
-3. source env/bin/activate
-4. pip install -r requirements.txt
-5. python manage.py makemigrations
-6. python manage.py runserver
+2. python3 -m venv walletenv
+3. source walletenv/bin/activate
+4. cd mywallet
+5. pip install -r requirements.txt
+6. python manage.py migrate
+7. python manage.py runserver
 
 ### Initialize my account for wallet
 
-  curl --location --request POST 'http://localhost/api/v1/wallet/init' --form 'customer_xid="{{customer_xid}}"'
+  curl --location --request POST 'http://127.0.0.1:8000/api/v1/wallet/init' --form 'customer_xid="{{customer_xid}}"'
   
   Eg:customer_xid = "ea0212d3-abd6-406f-8c67-868e814a2436"
 
